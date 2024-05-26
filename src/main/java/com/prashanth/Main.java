@@ -94,7 +94,7 @@ public class Main {
      * @param player2    the second player
      * @param isComputer a boolean indicating if the second player is a computer
      */
-    private static void startGame(Character player1, Character player2, boolean isComputer) {
+    public static void startGame(Character player1, Character player2, boolean isComputer) {
 
         System.out.println("Game started \\o//");
 
@@ -153,26 +153,5 @@ public class Main {
             player1.health -= 20;
         }
 
-    }
-
-    /**
-     * The Character class represents a player in the game.
-     * It has a name and a health value.
-     */
-    static class Character {
-
-        String name;
-        int health;
-
-        /**
-         * The constructor for the Character class.
-         *
-         * @param player the name of the player
-         * @param health the health of the player
-         */
-        public Character(String player, int health) {
-            this.name = player;
-            this.health = health;
-        }
     }
 }
